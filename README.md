@@ -7,4 +7,4 @@ Ultimately, I'm trying to use chatGPT as a jumping off point - as problems becom
 I've haven't fed the AI any direct input from the problem description, but rather trying to
 formulate my interpretation of the problem and generate help code snippets, instead of going to Google or StackOverflow for help.
 
-Rust's compiler debugger is doing the rest!
+The Rust compiler debugger is doing the rest!

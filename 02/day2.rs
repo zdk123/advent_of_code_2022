@@ -1,7 +1,7 @@
 use std::fs;
 use std::io::{BufReader, BufRead};
 
-fn create_symmetric_matrix(value_diagonal: i32, value_upper_triangular: i32, value_lower_triangular: i32) -> [[i32; 3]; 3] {
+fn create_payout_matrix(value_diagonal: i32, value_upper_triangular: i32, value_lower_triangular: i32) -> [[i32; 3]; 3] {
     let mut matrix = [[0; 3]; 3];
     for i in 0..3 {
         for j in 0..3 {
@@ -52,7 +52,7 @@ fn player2_str_to_strategy(s: &str) -> i32 {
 fn main() {
 
     // set up scoring matrix
-    let score_matrix = create_symmetric_matrix(3, 6, 0);
+    let score_matrix = create_payout_matrix(3, 6, 0);
 
 
     println!("{:?}", score_matrix);
